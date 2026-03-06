@@ -82,3 +82,15 @@ code {
         border-bottom-color: inherit;
     }
 }
+
+/* Hide Emergent branding */
+[class*="emergent"],
+[id*="emergent"],
+a[href*="emergent.sh"],
+div[style*="Made with Emergent"],
+button[aria-label*="Made with Emergent"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
