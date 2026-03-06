@@ -1,0 +1,208 @@
+{
+  "project_name": "HMIL Hall Booking System",
+  "design_philosophy": {
+    "persona": "E1: The Anti-AI Designer",
+    "core_principles": [
+      "Fusion over Imitation: Mix Automotive Precision with Swiss Design clarity.",
+      "Emotion First: Efficiency and Reliability.",
+      "Content is king: Data legibility is paramount.",
+      "Zoom in: Focus on hall availability details.",
+      "Negative Space: Use whitespace to reduce cognitive load."
+    ],
+    "anti_patterns": [
+      "Purple/Teal CTAs (Use HMIL Blue/Navy instead)",
+      "Center-Everything (Use strong left alignment for data)",
+      "Gradient Overload (Use solid, authoritative colors)"
+    ]
+  },
+  "theme": {
+    "mode": "light",
+    "strategy": "Archetype 2: The Performance Pro (Automotive Precision)",
+    "description": "A clean, high-contrast interface inspired by automotive showrooms and precision instruments. Dominant whites/silvers with deep navy accents."
+  },
+  "typography": {
+    "primary_font": "Manrope",
+    "secondary_font": "JetBrains Mono",
+    "logo_font": "Michroma",
+    "rules": {
+      "headings": "Manrope (Bold/ExtraBold) for crisp, modern headers. No Inter.",
+      "body": "Inter or system-ui for maximum legibility at small sizes.",
+      "data": "JetBrains Mono for time slots and booking IDs.",
+      "weights": {
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "bold": 700,
+        "black": 900
+      }
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#002C5F",
+        "foreground": "#FFFFFF",
+        "50": "#F0F7FF",
+        "100": "#E0EFFF",
+        "200": "#B8DFFF",
+        "300": "#7CC4FA",
+        "400": "#36A6EB",
+        "500": "#0C8BCF",
+        "600": "#006BA1",
+        "700": "#005682",
+        "800": "#00496D",
+        "900": "#002C5F",
+        "950": "#00224D"
+      },
+      "secondary": {
+        "DEFAULT": "#64748B",
+        "foreground": "#F8FAFC",
+        "50": "#F8FAFC",
+        "100": "#F1F5F9",
+        "200": "#E2E8F0",
+        "300": "#CBD5E1",
+        "400": "#94A3B8",
+        "500": "#64748B",
+        "600": "#475569",
+        "700": "#334155",
+        "800": "#1E293B",
+        "900": "#0F172A",
+        "950": "#020617"
+      },
+      "accent": {
+        "DEFAULT": "#00A3E0",
+        "foreground": "#FFFFFF",
+        "cyber": "#00A3E0"
+      },
+      "status": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444",
+        "info": "#3B82F6"
+      },
+      "background": "#FFFFFF",
+      "surface": "#F8FAFC",
+      "surface_highlight": "#F1F5F9"
+    },
+    "gradients": {
+      "subtle": "linear-gradient(to bottom right, #F8FAFC, #E2E8F0)",
+      "metallic": "linear-gradient(135deg, #E2E8F0 0%, #FFFFFF 50%, #E2E8F0 100%)",
+      "glow": "radial-gradient(circle at top left, rgba(0, 44, 95, 0.05), transparent 40%)"
+    }
+  },
+  "spacing_layout": {
+    "scale": "tailswind",
+    "base_padding": "p-6 md:p-8 lg:p-12",
+    "container_padding": "p-6",
+    "gap": "gap-6",
+    "radius": {
+      "sm": "rounded-sm",
+      "md": "rounded-md",
+      "lg": "rounded-lg",
+      "xl": "rounded-xl",
+      "full": "rounded-full"
+    },
+    "grid_strategy": "Bento Grid (Mode B for Dashboards)",
+    "mobile_first": true
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-primary/90 shadow-md rounded-md px-6 py-2.5 font-semibold tracking-wide transition-all active:scale-95",
+      "secondary": "bg-secondary/10 text-secondary-900 hover:bg-secondary/20 rounded-md px-6 py-2.5 font-medium transition-all",
+      "ghost": "hover:bg-accent/10 text-accent-700 hover:text-accent-900 rounded-md px-4 py-2 transition-colors",
+      "destructive": "bg-destructive text-white hover:bg-destructive/90 rounded-md px-6 py-2.5 shadow-sm"
+    },
+    "cards": {
+      "base": "bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300",
+      "glass": "bg-white/70 backdrop-blur-xl border border-white/40 shadow-sm",
+      "interactive": "cursor-pointer hover:border-primary/50 hover:ring-2 hover:ring-primary/5 transition-all group"
+    },
+    "inputs": {
+      "base": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+      "focus": "focus:border-primary focus:ring-1 focus:ring-primary"
+    },
+    "navigation": {
+      "sidebar": "fixed left-0 top-0 h-full w-64 bg-slate-900 text-white p-6 hidden md:flex flex-col z-50",
+      "header": "sticky top-0 z-40 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md px-6 py-4 flex items-center justify-between"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "soft": "0 2px 10px rgba(0,0,0,0.03)",
+      "floating": "0 10px 30px -10px rgba(0,0,0,0.1)"
+    },
+    "borders": {
+      "subtle": "1px solid #E2E8F0",
+      "active": "1px solid #002C5F"
+    },
+    "micro_interactions": [
+      "Hover lift on cards (-2px)",
+      "Scale down on button press (0.98)",
+      "Fade in on page load"
+    ]
+  },
+  "assets": {
+    "images": {
+      "login_bg": {
+        "url": "https://images.unsplash.com/photo-1486406163929-6565aa41cd2c?auto=format&fit=crop&w=1920&q=80",
+        "alt": "Modern Corporate Architecture",
+        "description": "Sleek, glass office building lobby"
+      },
+      "halls": [
+        {
+          "name": "Elantra Hall",
+          "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+          "vibe": "Executive, Glass, Modern",
+          "capacity": "20 Pax"
+        },
+        {
+          "name": "Exter Hall",
+          "url": "https://images.unsplash.com/photo-1517502884422-41e157d4433c?auto=format&fit=crop&w=800&q=80",
+          "vibe": "Creative, Bright, Open",
+          "capacity": "12 Pax"
+        },
+        {
+          "name": "Embera Hall",
+          "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80",
+          "vibe": "Boardroom, Premium, Wood",
+          "capacity": "50 Pax"
+        }
+      ],
+      "avatars": [
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      ]
+    },
+    "icons": {
+      "library": "lucide-react",
+      "styles": "stroke-width=1.5"
+    }
+  },
+  "libraries": {
+    "charts": "recharts",
+    "calendar": "react-day-picker",
+    "dates": "date-fns",
+    "notifications": "sonner",
+    "animations": "framer-motion (optional, use tailwind-animate first)"
+  },
+  "instructions_to_main_agent": [
+    "1. Setup Shadcn: Ensure all base components (Button, Input, Card, Dialog, Select, Table) are installed.",
+    "2. Pages Structure: Create distinct layouts for Auth (Centered) vs Dashboard (Sidebar + Header).",
+    "3. Auth Flow: Implement specific @hmil.net validation in the form schema (zod).",
+    "4. Hall Cards: Display the 3 halls with their specific images. Use 'Available'/'Booked' badges.",
+    "5. Calendar: Use a full-width calendar or a list of time slots. The time slots are fixed (8-10, 10-12, 1-3, 3-5).",
+    "6. Admin: Admin dashboard must show a 'Pending Requests' table with Approve/Reject actions.",
+    "7. Notifications: Use Sonner for success/error toasts. Also build a visual notification center in the UI.",
+    "8. Database: Ensure MongoDB schemas support the 'pending' -> 'approved' workflow.",
+    "9. Dark Mode: If implementing, ensure contrast ratios are maintained. Default to Light Mode for this corporate tool.",
+    "10. Empty States: Always provide a helpful empty state (e.g., 'No bookings found. Book your first hall!')"
+  ],
+  "universal_guidelines": [
+    "Do not use generic centered layouts. Use grid-based asymmetry.",
+    "Use 2-3x more spacing than typical (p-8 instead of p-4).",
+    "Every interaction needs a micro-animation (hover, focus, active).",
+    "Use data-testid attributes for all interactive elements.",
+    "Components must use named exports.",
+    "Pages must use default exports."
+  ]
+}
