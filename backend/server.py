@@ -177,7 +177,7 @@ async def reset_password(data: ResetPassword):
 async def get_halls():
     halls_data = [
         {"id": "elantra", "name": "Elantra Hall", "capacity": "20 Pax", "image_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"},
-        {"id": "exter", "name": "Exter Hall", "capacity": "12 Pax", "image_url": "https://images.unsplash.com/photo-1517502884422-41e157d4433c?auto=format&fit=crop&w=800&q=80"},
+        {"id": "exter", "name": "Exter Hall", "capacity": "12 Pax", "image_url": "https://images.unsplash.com/photo-1772112334844-2eed0111e690?auto=format&fit=crop&w=800&q=80"},
         {"id": "embera", "name": "Embera Hall", "capacity": "50 Pax", "image_url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"}
     ]
     return halls_data
